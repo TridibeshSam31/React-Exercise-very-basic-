@@ -29,7 +29,7 @@ function FitnessTracker() {
         }
 
         const weightDifference = cw - tw;
-        const caloriesToBurn = weightDifference * 7700;
+        const caloriesToBurn = weightDifference * 7700;//1kg loose ya add krne ke liye humme 7700kcal calories chaiye 
         const dailyCalories = caloriesToBurn / d;
 
         if (weightDifference === 0) {
