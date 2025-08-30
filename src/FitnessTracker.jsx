@@ -57,6 +57,43 @@ function FitnessTracker() {
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className="w-full max-w-md bg-white/20 backdrop-blur-xl rounded-2xl shadow-lg p-8 space-y-6"
             >
+                {/* This is a special motion-enabled div from Framer Motion.
+                It allows you to animate the div by defining initial, animate, and transition states. 
+                2. initial={{ opacity: 0, scale: 0.9, y: 30 }}
+
+                This is the starting state of the component when it first renders:
+
+                - opacity: 0 → completely invisible.
+                - scale: 0.9 → slightly smaller (90% of its size).
+                - y: 30 → shifted 30px down.
+
+                So, the card starts small, hidden, and slightly pushed down.
+
+                3. animate={{ opacity: 1, scale: 1, y: 0 }}
+
+                This is the final state after the animation:
+
+                - opacity: 1 → fully visible.
+                - scale: 1 → normal size.
+                - y: 0 → back to its correct position.
+
+                So, the card fades in, grows to normal size, and moves up into place.
+
+                4. transition={{ duration: 0.6, ease: "easeOut" }}
+
+                 Controls how the animation plays:
+
+                - duration: 0.6 → takes 0.6 seconds.
+                - ease: "easeOut" → starts fast and slows down at the end (smooth finish).
+
+
+
+
+
+
+                
+                
+                */}
                 <h2 className="text-3xl font-extrabold text-center text-white drop-shadow-md">
                     Fitness Tracker
                 </h2>
@@ -128,3 +165,5 @@ function FitnessTracker() {
 
 export default FitnessTracker;
 
+//Rest mai aur kya hi likhu basic html likhi hai aur rest maine lucid se dumbell , target and calander liya tha ussi toh uski styling ki hai tailwind se 
+//main toh functionality pr focus kiya filhaal jyada UI pr nhi kiya
